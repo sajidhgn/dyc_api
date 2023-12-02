@@ -1,5 +1,6 @@
 import bcrypt from "bcrypt";
 import jwt from "jsonwebtoken";
+import config from "../config/config";
 import {UserModel} from "../models/user.model";
 export const bcryptPassword = async (password:any) => {
     const salt = await bcrypt.genSaltSync(10);
@@ -11,7 +12,7 @@ export const generateToken=(user: any): string => {
         sub: user.id
     };
 
-    return jwt.sign(payload, 'process.env.JWT_SECRET_KEY', { expiresIn: '1h' });
+    return jwt.sign(payload, config.secret, { expiresIn: '1h' });
 }
 
 export  const checkUserAuth = async (req:any, res:any, next:any) => {
@@ -24,7 +25,7 @@ export  const checkUserAuth = async (req:any, res:any, next:any) => {
             token = authorization.split(' ')[1]
 
             // Verify Token
-            const { userID }:any = jwt.verify(token, 'process.env.JWT_SECRET_KEY')
+            const { userID }:any = jwt.verify(token, config.secret)
 
             // Get User from Token
             console.log(userID)

@@ -5,7 +5,8 @@
   "license": "MIT",
   "scripts": {
     "start": "cross-env NODE_ENV=development ts-node src/index.ts",
-    "build": "tsc"
+    "build": "tsc",
+    "seed": "ts-node src/seeders/home.seeder.ts"
   },
   "devDependencies": {
     "@types/body-parser": "^1.19.5",

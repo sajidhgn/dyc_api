@@ -1,12 +1,6 @@
 import mongoose, {Schema, Document} from 'mongoose';
 import {bcryptPassword} from "../middlewares/auth.helper";
-export interface IUser extends Document {
-    username: string;
-    email: string;
-    password: string;
-    phone: string;
-    role: string;
-}
+
 
 const UserSchema: Schema = new Schema({
     username: {
@@ -41,4 +35,4 @@ UserSchema.pre('save', async function (next) {
         return next(error);
     }
 });
-export const UserModel = mongoose.model<IUser>('users', UserSchema);
+export const UserModel = mongoose.model('users', UserSchema);

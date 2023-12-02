@@ -1,45 +1,74 @@
 import mongoose, {Schema, Document} from 'mongoose';
 
-interface IBannerslider {
-    title: string;
-    estimatebtnlink: string;
-    casestudybtnlink: string;
-}
-interface IBannersliderlogos {
-    img: string;
-}
-interface IIndustrylist {
-    title:string;
-}
-interface IBusinesslist {
-    title:string;
-}
-interface IPickyourindustry {
-    title:string;
-    description:string;
-    industrylist:IIndustrylist[];
-    businesslist:IBusinesslist[];
-}
-export interface IHomepage extends Document {
-    bannervideo:string;
-    bannervideoposter:string;
-    bannerslider:IBannerslider[];
-    bannersliderlogos: IBannersliderlogos[];
-    industrypicker:IPickyourindustry[];
-}
-
 const HomepageSchema: Schema = new Schema({
-
-    bannervideo: {
-        type: String,
+    banner: {
+        bannervideo: {type: String, required: true},
+        bannervideoposter: {type: String, required: true},
+        bannerslider: [
+            {
+                title: {type: String, required: true},
+                estimatebtnlink: {type: String, required: true},
+                casestudybtnlink: {type: String, required: true},
+                logoimg: {type: String, required: true}
+            }
+        ]
     },
-    bannervideoposter: {
-        type: String,
+    industrypickerform: {
+        industrypicker_title: {type: String, required: true},
+        industrypicker_description: {type: String, required: true},
+        industrypicker: [
+            {
+                title: {type: String, required: true}
+            }
+        ],
+        businesspicker: [
+            {
+                title: {type: String, required: true}
+            }
+        ]
     },
-    bannerslider: [],
-    bannersliderlogos: [],
-    industrypicker: []
-
+    experienceworld: {
+        html: {type: String, required: true}
+    },
+    development_services: {
+        title: {type: String, required: true},
+        tabList: [
+            {
+                icon: {type: String, required: true},
+                title: {type: String, required: true},
+                description: {type: String, required: true},
+                btnlink: {type: String, required: true},
+                iconList: [
+                    {
+                        icon: {type: String, required: true}
+                    }
+                ]
+            }
+        ]
+    },
+    industrieslist: {
+        title: {type: String, required: true},
+        industries: [
+            {
+                title: {type: String, required: true},
+                icon: {type: String, required: true},
+                description: {type: String, required: true},
+                btnlink: {type: String, required: true}
+            }
+        ]
+    },
+    portfolio_section: {
+        heading: {type: String, required: true},
+        portfolios: [
+            {
+                title: {type: String, required: true},
+                description: {type: String, required: true},
+                btnlink: {type: String, required: true},
+                img: {type: String, required: true},
+                logoimg: {type: String, required: true}
+            }
+        ]
+    },
 }, {timestamps: true});
 
-export const HomeModel = mongoose.model<IHomepage>('homepage', HomepageSchema);
+export const HomeModel = mongoose.model('homepage', HomepageSchema);

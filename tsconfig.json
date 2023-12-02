@@ -23,7 +23,7 @@
     "./utils/global.d.ts", "./node_modules/@types"
   ],
   "include": [
-    "src/**/*.ts"
+    "src/**/*.ts", "src/config/config.ts"
   ],
   "exclude": [
     "node_modules"

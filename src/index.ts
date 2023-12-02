@@ -7,6 +7,7 @@ import cors from "cors";
 import session from "express-session";
 import MongoStore from "connect-mongo";
 import passport from "./config/passport";
+import cofig from "./config/config"
 import './config/db';
 import * as path from 'path';
 import * as dotenv from 'dotenv';
@@ -29,18 +30,18 @@ app.use(bodyParser.urlencoded({
 app.use(bodyParser.json());
 
 app.use(session({
-    secret: '_jYwa!-Hy2lZV9~E92akfpVhXTtSRija~',
+    secret: cofig.secret,
     resave: false,
     saveUninitialized:true,
     store: MongoStore.create({mongoUrl: "mongodb://localhost:27017/passport", collectionName: "sessions"}),
     cookie: {
-        maxAge: 1000 * 60 * 60 * 24
+        maxAge: cofig.jwt_expires_in
     }
 }));
 app.use(passport.initialize());
 app.use(passport.session());
 
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3050;
 
 app.use('/api', require('./routes'));
 

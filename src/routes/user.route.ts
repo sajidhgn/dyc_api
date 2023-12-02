@@ -6,13 +6,11 @@ import {checkUserAuth} from "../middlewares/auth.helper";
 
 const userRoute =router
     .post('/register', userController.userRegistration)
-    .get('/protected', checkUserAuth, (req: any, res: any) => {
-        res.send('Protected route - Authentication successful');
-    })
     .post('/login', userController.userLogin)
     // .get('/user/:id', userController.getUserById)
     .put('/:id', checkUserAuth, userController.updateUser)
     .delete('/:id', checkUserAuth, userController.deleteUser)
+    .post('/logout',checkUserAuth, userController.logoutUser)
 
 
 export default userRoute;

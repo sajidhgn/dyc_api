@@ -4,6 +4,7 @@ import { Strategy as JwtStrategy, ExtractJwt } from 'passport-jwt';
 import {compareSync} from "bcrypt";
 import {UserModel} from "../models/user.model";
 import {generateToken} from "../middlewares/auth.helper";
+import config from "../config/config"
 
 
 passport.use(new LocalStrategy(
@@ -34,7 +35,7 @@ passport.use(
     new JwtStrategy(
         {
             jwtFromRequest: ExtractJwt.fromAuthHeaderAsBearerToken(),
-            secretOrKey: 'afq234rfqfw4tfgq345f4f3qfq4',
+            secretOrKey: config.secret,
         },
         (payload, done) => {
             UserModel.findById(payload.sub, (err:any, user:any) => {
