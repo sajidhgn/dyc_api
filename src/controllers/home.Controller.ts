@@ -4,14 +4,15 @@ import {generateToken} from "../middlewares/auth.helper";
 
 // Banner section
 export const Banner = async (req: any, res: any) => {
+
     try {
-        const updatedBanner = await HomeModel.findByIdAndUpdate(req.params.id, { $set: { banner: req.body } });
+        const updatedBanner = await HomeModel.findByIdAndUpdate(req.params.id, { $set: { banner: req.body.payload } });
 
         if (!updatedBanner) {
-            res.status(404).json({ message: 'Banner not found' });
+            res.status(404).json({ "status": "error",message: 'Banner not found' });
             return;
         }
-        res.status(200).json({ message: 'Banner updated successfully' });
+        res.status(200).json({ "status": "success",message: 'Banner updated successfully'});
     } catch (error) {
         console.error('Error updating banner:', error);
         res.status(500).json({ message: 'Internal server error' });
@@ -74,10 +75,10 @@ export const homeData = async (req: any, res: any) => {
     try {
         const data = await HomeModel.find({});
         if (!data) {
-            return res.status(404).json({error: 'Data not found'});
+            return res.json({status: 'error', message: 'Data not found'});
         }
-        res.json({message: 'Success'});
+        res.json({status: 'success', message: 'Success', data: data});
     } catch (error) {
-        res.status(500).json({error: 'Internal Server Error'});
+        res.json({status: 'error', message: 'Internal Server Error'});
     }
 };

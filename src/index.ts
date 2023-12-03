@@ -18,9 +18,16 @@ dotenv.config({ path: envPath });
 
 const app = express();
 
-app.use(cors({
-    credentials: true,
-}))
+// app.use(cors({credentials: true, origin: true, exposedHeaders: '*'}))
+
+const corsOptions = {
+    origin: 'http://localhost:3040',  // Change this to your frontend origin
+
+};
+
+// Enable CORS for all routes with custom options
+app.use(cors(corsOptions));
+
 app.use(compression());
 app.use(cookieParser());
 

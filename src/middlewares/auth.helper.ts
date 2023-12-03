@@ -12,13 +12,12 @@ export const generateToken=(user: any): string => {
         sub: user.id
     };
 
-    return jwt.sign(payload, config.secret, { expiresIn: '1h' });
+    return jwt.sign(payload, config.secret, { expiresIn: '1d' });
 }
 
 export  const checkUserAuth = async (req:any, res:any, next:any) => {
     let token
     const { authorization } = req.headers
-    console.log(authorization)
     if (authorization && authorization.startsWith('Bearer')) {
         try {
             // Get Token from header
@@ -27,8 +26,6 @@ export  const checkUserAuth = async (req:any, res:any, next:any) => {
             // Verify Token
             const { userID }:any = jwt.verify(token, config.secret)
 
-            // Get User from Token
-            console.log(userID)
             req.user = await UserModel.findById(userID).select('id')
 
             next()
