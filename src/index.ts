@@ -18,7 +18,7 @@ dotenv.config({ path: envPath });
 
 const app = express();
 
-app.use(cors({credentials: true, origin: true, exposedHeaders: '*'}))
+app.use(cors({credentials: true, origin: true}))
 
 app.use(compression());
 app.use(cookieParser());

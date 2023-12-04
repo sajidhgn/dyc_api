@@ -72,11 +72,13 @@ export const IndustriesList = async (req: any, res: any) => {
 // Get Home
 export const homeData = async (req: any, res: any) => {
     try {
-        const data = await HomeModel.find({});
-        if (!data) {
-            return res.json({status: 'error', message: 'Data not found'});
+        if(req.body.list){
+            const data = await HomeModel.find({});
+            if (!data) {
+                return res.json({status: 'error', message: 'Data not found'});
+            }
+            res.json({status: 'success', message: 'Success', data: data});
         }
-        res.json({status: 'success', message: 'Success', data: data});
     } catch (error) {
         res.json({status: 'error', message: 'Internal Server Error'});
     }
