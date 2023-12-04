@@ -9,13 +9,12 @@ export const Banner = async (req: any, res: any) => {
         const updatedBanner = await HomeModel.findByIdAndUpdate(req.params.id, { $set: { banner: req.body.payload } });
 
         if (!updatedBanner) {
-            res.status(404).json({ "status": "error",message: 'Banner not found' });
-            return;
+          return  res.json({ "status": "error",message: 'Banner not found' });
         }
-        res.status(200).json({ "status": "success",message: 'Banner updated successfully'});
+        res.json({ "status": "success",message: 'Banner updated successfully'});
     } catch (error) {
-        console.error('Error updating banner:', error);
-        res.status(500).json({ message: 'Internal server error' });
+
+        res.json({ "status": "error", message: 'Internal server error' });
     }
 };
 

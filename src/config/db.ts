@@ -1,6 +1,7 @@
 import mongoose from 'mongoose';
 
-const mongoURL = 'mongodb://localhost:27017/dycoders_db';
+const mongoURL = 'mongodb+srv://sajidhgn:ye3qG7AApMYJ7abk@nodejsexpress.qnniapr.mongodb.net/dycoders_db';
+// const mongoURL = 'mongodb://localhost:27017/dycoders_db';
 const mongoURI = process.env.MONGO_URI || mongoURL
 
 mongoose.connect(mongoURI);

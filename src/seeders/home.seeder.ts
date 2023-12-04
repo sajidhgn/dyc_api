@@ -3,7 +3,7 @@ import mongoose from 'mongoose';
 import {HomeModel} from "../models/home.model";
 
 // Connect to MongoDB
-mongoose.connect('mongodb://localhost:27017/dycoders_db');
+mongoose.connect('mongodb+srv://sajidhgn:ye3qG7AApMYJ7abk@nodejsexpress.qnniapr.mongodb.net/dycoders_db');
 
 // Sample data for seeding
 const sampleData = {
