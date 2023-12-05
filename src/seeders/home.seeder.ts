@@ -23,10 +23,17 @@ const sampleData = {
             industrypicker_title: 'Industry Picker Title',
             industrypicker_description: 'Industry Picker Description',
             industrypicker: [
-                {title: 'Industry 1'}
+                {title: 'Industry 1'},
+                {title: 'Industry 2'},
+                {title: 'Industry 3'},
+                {title: 'Industry 4'},
             ],
             businesspicker: [
-                {title: 'Business 1'}
+                {title: 'Business 1'},
+                {title: 'Business 2'},
+                {title: 'Business 3'},
+                {title: 'Business 4'},
+                {title: 'Business 5'}
             ],
         },
         experienceworld:{
