@@ -47,6 +47,36 @@ export const AboutSection = async (req: any, res: any) => {
     }
 };
 
+// Leadership section
+export const LeaderShip = async (req: any, res: any) => {
+    try {
+        const data = await AboutModel.findByIdAndUpdate(req.params.id, { $set: { leadership: req.body.payload } });
+
+        if (!data) {
+            return  res.status(404).json({ "status": "error",message: 'Data not found' });
+        }
+        res.status(200).json({ "status": "success",message: 'Data updated successfully'});
+    } catch (error) {
+
+        res.status(500).json({ "status": "error", message: 'Internal server error' });
+    }
+};
+
+// Leadership section
+export const customize_solution = async (req: any, res: any) => {
+    try {
+        const data = await AboutModel.findByIdAndUpdate(req.params.id, { $set: { leadership: req.body.payload } });
+
+        if (!data) {
+            return  res.status(404).json({ "status": "error",message: 'Data not found' });
+        }
+        res.status(200).json({ "status": "success",message: 'Data updated successfully'});
+    } catch (error) {
+
+        res.status(500).json({ "status": "error", message: 'Internal server error' });
+    }
+};
+
 
 // Get List
 export const ServicesData = async (req: any, res: any) => {

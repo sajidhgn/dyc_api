@@ -466,6 +466,20 @@ const sampleData = {
                     img: 'sample_project_image_url',
                     logoimg: 'sample_project_logo_url',
                 },
+                {
+                    title: 'Project 2',
+                    description: 'Project 1 Description',
+                    btnlink: 'sample_project_link',
+                    img: 'sample_project_image_url',
+                    logoimg: 'sample_project_logo_url',
+                },
+                {
+                    title: 'Project 3',
+                    description: 'Project 1 Description',
+                    btnlink: 'sample_project_link',
+                    img: 'sample_project_image_url',
+                    logoimg: 'sample_project_logo_url',
+                },
 
             ],
         },

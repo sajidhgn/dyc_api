@@ -49,7 +49,6 @@ const ServicepageSchema: Schema = new Schema({
         sub_title: {type: String, required: true},
         list: [
             {
-
                 icon: {type: String, required: true},
                 title: {type: String, required: true}
             }
