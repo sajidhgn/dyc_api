@@ -14,6 +14,10 @@ const defaultRoutes = [
         route: homeRoute
     },
     {
+        path: '/about',
+        route: servicesRoute
+    },
+    {
         path: '/service',
         route: servicesRoute
     }
