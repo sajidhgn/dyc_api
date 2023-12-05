@@ -1,6 +1,7 @@
 const express = require('express');
 import userRoute from "./user.route";
 import homeRoute from "./home.route";
+import servicesRoute from "./services.route";
 const router = express.Router();
 
 const defaultRoutes = [
@@ -11,6 +12,10 @@ const defaultRoutes = [
     {
         path: '/home',
         route: homeRoute
+    },
+    {
+        path: '/service',
+        route: servicesRoute
     }
 ];
 

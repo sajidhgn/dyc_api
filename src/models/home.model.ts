@@ -28,7 +28,12 @@ const HomepageSchema: Schema = new Schema({
         ]
     },
     experienceworld: {
-        html: {type: String, required: true}
+        content: {type: String, required: true},
+        style: {type: String}
+    },
+    quotation: {
+        content: {type: String, required: true},
+        style: {type: String}
     },
     development_services: {
         title: {type: String, required: true},
@@ -68,6 +73,10 @@ const HomepageSchema: Schema = new Schema({
                 logoimg: {type: String, required: true}
             }
         ]
+    },
+    engagementmodel: {
+        content: {type: String, required: true},
+        style: {type: String}
     },
 }, {timestamps: true});
 

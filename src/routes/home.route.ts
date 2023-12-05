@@ -9,4 +9,8 @@ const homeRoute = router
     .put('/industrypicker/:id',checkUserAuth, homeController.IndustryPicker)
     .put('/services/:id',checkUserAuth, homeController.DevelopmentServices)
     .put('/industries/:id',checkUserAuth, homeController.IndustriesList)
+    .put('/experienceworld/:id',checkUserAuth, homeController.ExperienceWorld)
+    .put('/quotation/:id',checkUserAuth, homeController.QuotationContent)
+    .put('/engagementmodel/:id',checkUserAuth, homeController.EngagementModel)
+    .put('/portfolio/:id',checkUserAuth, homeController.PortfolioSection)
 export default homeRoute;

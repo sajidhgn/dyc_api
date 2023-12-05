@@ -30,7 +30,205 @@ const sampleData = {
             ],
         },
         experienceworld:{
-            html: ' <section className="expsec p60 bg-white text-center">\n' +
+            style: '',
+            content: ' <section className="expsec p60 bg-white text-center">\n' +
+                '        <div className="container">\n' +
+                '          <div className="row justify-content-center">\n' +
+                '            <div className="col-lg-10 col-md-12 col-sm-12">\n' +
+                '              <div className="headerbox">\n' +
+                '                <h3>\n' +
+                '                  Experience World-class{" "}\n' +
+                '                  <span className="text-primarys">Agile</span> Product\n' +
+                '                  Development\n' +
+                '                </h3>\n' +
+                '              </div>\n' +
+                '              <div className="expcontent">\n' +
+                '                <p>\n' +
+                '                  DyCoders is a vigorous team of passionate web developers,\n' +
+                '                  coders, designers, creatives, and tech-junkies that aims to\n' +
+                '                  provide cutting-edge and futuristic solutions to tech\n' +
+                '                  startups, mid-size companies, and enterprises. Our ultimate\n' +
+                '                  mission is to make DyCoders the leading software development\n' +
+                '                  and consulting company by keeping our steady experimental\n' +
+                '                  approach and being open to ideas and innovations.\n' +
+                '                </p>\n' +
+                '                <p>\n' +
+                '                  By serving more than 50 companies and organizations to this\n' +
+                '                  date, we know how to create and deliver a successful digital\n' +
+                '                  product. Owing to these qualities and countless more, we have\n' +
+                '                  helped our clients reach the top tier in terms of domains like\n' +
+                '                  software development, mobile app development, e-commerce\n' +
+                '                  website development, design and interface development, and\n' +
+                '                  many more. We stay ahead of all the trends and keep perfecting\n' +
+                '                  our practices by aligning them with the newest data, research,\n' +
+                '                  innovations, and methodologies.\n' +
+                '                </p>\n' +
+                '              </div>\n' +
+                '            </div>\n' +
+                '            <div className="col-12 expdetail">\n' +
+                '              <div className="row">\n' +
+                '                <div className="col-lg-2 col-md-4 col-sm-12 col-12">\n' +
+                '                  <div className="expbox">\n' +
+                '                    <div>\n' +
+                '                      <div className="iconbox">\n' +
+                '                        <Image\n' +
+                '                          src="images/business.svg"\n' +
+                '                          className="img-fluid"\n' +
+                '                          width={0}\n' +
+                '                          height={0}\n' +
+                '                          sizes="100vw"\n' +
+                '                          style={{ width: "100%", height: "auto" }}\n' +
+                '                          alt="bussiness"\n' +
+                '                        />\n' +
+                '                      </div>\n' +
+                '                      <div className="exphead">\n' +
+                '                        <h5>8+</h5>\n' +
+                '                        <p>\n' +
+                '                          Years in\n' +
+                '                          <br />\n' +
+                '                          Business\n' +
+                '                        </p>\n' +
+                '                      </div>\n' +
+                '                    </div>\n' +
+                '                  </div>\n' +
+                '                </div>\n' +
+                '                <div className="col-lg-2 col-md-4 col-sm-12 col-12">\n' +
+                '                  <div className="expbox">\n' +
+                '                    <div>\n' +
+                '                      <div className="iconbox">\n' +
+                '                        <Image\n' +
+                '                          src="images/team.svg"\n' +
+                '                          className="img-fluid"\n' +
+                '                          alt=""\n' +
+                '                          width={0}\n' +
+                '                          height={0}\n' +
+                '                          sizes="100vw"\n' +
+                '                          style={{ width: "100%", height: "auto" }}\n' +
+                '                        />\n' +
+                '                      </div>\n' +
+                '                      <div className="exphead">\n' +
+                '                        <h5>80+</h5>\n' +
+                '                        <p>\n' +
+                '                          Team\n' +
+                '                          <br />\n' +
+                '                          Members\n' +
+                '                        </p>\n' +
+                '                      </div>\n' +
+                '                    </div>\n' +
+                '                  </div>\n' +
+                '                </div>\n' +
+                '                <div className="col-lg-2 col-md-4 col-sm-12 col-12">\n' +
+                '                  <div className="expbox">\n' +
+                '                    <div>\n' +
+                '                      <div className="iconbox">\n' +
+                '                        <Image\n' +
+                '                          src="images/projects.svg"\n' +
+                '                          className="img-fluid"\n' +
+                '                          alt=""\n' +
+                '                          width={0}\n' +
+                '                          height={0}\n' +
+                '                          sizes="100vw"\n' +
+                '                          style={{ width: "100%", height: "auto" }}\n' +
+                '                        />\n' +
+                '                      </div>\n' +
+                '                      <div className="exphead">\n' +
+                '                        <h5>200+</h5>\n' +
+                '                        <p>\n' +
+                '                          Projects\n' +
+                '                          <br />\n' +
+                '                          Done\n' +
+                '                        </p>\n' +
+                '                      </div>\n' +
+                '                    </div>\n' +
+                '                  </div>\n' +
+                '                </div>\n' +
+                '                <div className="col-lg-2 col-md-4 col-sm-12 col-12">\n' +
+                '                  <div className="expbox">\n' +
+                '                    <div>\n' +
+                '                      <div className="iconbox">\n' +
+                '                        <Image\n' +
+                '                          src="images/offices.svg"\n' +
+                '                          className="img-fluid"\n' +
+                '                          alt=""\n' +
+                '                          width={0}\n' +
+                '                          height={0}\n' +
+                '                          sizes="100vw"\n' +
+                '                          style={{ width: "100%", height: "auto" }}\n' +
+                '                        />\n' +
+                '                      </div>\n' +
+                '                      <div className="exphead">\n' +
+                '                        <h5>4+</h5>\n' +
+                '                        <p>\n' +
+                '                          Global\n' +
+                '                          <br />\n' +
+                '                          Offices\n' +
+                '                        </p>\n' +
+                '                      </div>\n' +
+                '                    </div>\n' +
+                '                  </div>\n' +
+                '                </div>\n' +
+                '                <div className="col-lg-2 col-md-4 col-sm-12 col-12">\n' +
+                '                  <div className="expbox">\n' +
+                '                    <div>\n' +
+                '                      <div className="iconbox">\n' +
+                '                        <Image\n' +
+                '                          src="images/clients.svg"\n' +
+                '                          className="img-fluid"\n' +
+                '                          alt=""\n' +
+                '                          width={0}\n' +
+                '                          height={0}\n' +
+                '                          sizes="100vw"\n' +
+                '                          style={{ width: "100%", height: "auto" }}\n' +
+                '                        />\n' +
+                '                      </div>\n' +
+                '                      <div className="exphead">\n' +
+                '                        <h5>200+</h5>\n' +
+                '                        <p>Clients</p>\n' +
+                '                      </div>\n' +
+                '                    </div>\n' +
+                '                  </div>\n' +
+                '                </div>\n' +
+                '                <div className="col-lg-2 col-md-4 col-sm-12 col-12">\n' +
+                '                  <div className="expbox">\n' +
+                '                    <div>\n' +
+                '                      <div className="iconbox">\n' +
+                '                        <Image\n' +
+                '                          src="images/establish.svg"\n' +
+                '                          className="img-fluid"\n' +
+                '                          alt=""\n' +
+                '                          width={0}\n' +
+                '                          height={0}\n' +
+                '                          sizes="100vw"\n' +
+                '                          style={{ width: "100%", height: "auto" }}\n' +
+                '                        />\n' +
+                '                      </div>\n' +
+                '                      <div className="exphead">\n' +
+                '                        <h5>2014</h5>\n' +
+                '                        <p>Established</p>\n' +
+                '                      </div>\n' +
+                '                    </div>\n' +
+                '                  </div>\n' +
+                '                </div>\n' +
+                '              </div>\n' +
+                '\n' +
+                '              <div className="row">\n' +
+                '                <div className="col-12">\n' +
+                '                  <Link href="/" className="btn btn--small bluebtn">\n' +
+                '                    <div>\n' +
+                '                      Get A Quote{" "}\n' +
+                '                      <i className="far fa-long-arrow-alt-right ms-2"></i>\n' +
+                '                    </div>\n' +
+                '                  </Link>\n' +
+                '                </div>\n' +
+                '              </div>\n' +
+                '            </div>\n' +
+                '          </div>\n' +
+                '        </div>\n' +
+                '      </section>'
+        },
+        engagementmodel:{
+            style: '',
+            content: ' <section className="expsec p60 bg-white text-center">\n' +
                 '        <div className="container">\n' +
                 '          <div className="row justify-content-center">\n' +
                 '            <div className="col-lg-10 col-md-12 col-sm-12">\n' +
@@ -264,6 +462,10 @@ const sampleData = {
 
             ],
         },
+        quotation:{
+        style: '',
+        content: 'Inventing not for bussiness'
+    },
 };
 
 // Seed the database
