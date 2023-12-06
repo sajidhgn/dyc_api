@@ -5,7 +5,7 @@ const router = express.Router();
 
 const careerRoute = router
     .post('/list', careerController.CareerData)
-    .put('/banner/:id', checkUserAuth, careerController.BannerSlider)
+    .put('/banner/:id', checkUserAuth, careerController.Banner)
     .put('/collaboration/:id', checkUserAuth, careerController.Collaboration)
     .put('/collaboration/:id', checkUserAuth, careerController.CurrentHiring)
     .put('/totalperks/:id', checkUserAuth, careerController.TotalPerks)

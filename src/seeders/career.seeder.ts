@@ -40,6 +40,49 @@ const sampleData = {
                         title: "one"
                     }
                 ],
+            },
+            {
+                title: "title",
+                posted_date: "posted date",
+                category: "category",
+                experience: "experience",
+                gender: "gender",
+                qualification: "qualification",
+                job_description: "description",
+                responsibilities: "responsibilities",
+                requirements: "requirements",
+                job_skills: [
+                    {
+                        title: "one"
+                    },
+                    {
+                        title: "one"
+                    },
+                    {
+                        title: "one"
+                    }
+                ],
+            },  {
+                title: "title",
+                posted_date: "posted date",
+                category: "category",
+                experience: "experience",
+                gender: "gender",
+                qualification: "qualification",
+                job_description: "description",
+                responsibilities: "responsibilities",
+                requirements: "requirements",
+                job_skills: [
+                    {
+                        title: "one"
+                    },
+                    {
+                        title: "one"
+                    },
+                    {
+                        title: "one"
+                    }
+                ],
             }
         ]
     },
