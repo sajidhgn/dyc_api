@@ -105,7 +105,7 @@ const sampleData = {
 async function seedDatabase() {
     try {
         // Clear existing data
-        await ServicesModel.deleteMany({});
+        await ServicesModel.deleteMany({}).maxTimeMS(30000);;
 
         // Insert new data
         await ServicesModel.create(sampleData);

@@ -11,7 +11,8 @@
     "seed:services": "ts-node src/seeders/services.seeder.ts",
     "seed:industry": "ts-node src/seeders/industry.seeder.ts",
     "seed:contact": "ts-node src/seeders/contact.seeder.ts",
-    "seed:all": "yarn seed:home && yarn seed:about && yarn seed:services && yarn seed:industry && yarn seed:contact"
+    "seed:career": "ts-node src/seeders/career.seeder.ts",
+    "seed:all": "yarn seed:home && yarn seed:about && yarn seed:services && yarn seed:industry && yarn seed:contact && yarn seed:career"
   },
   "devDependencies": {
     "@types/body-parser": "^1.19.5",

@@ -5,6 +5,7 @@ import aboutRoute from "./about.route";
 import servicesRoute from "./services.route";
 import industryRoute from "./industry.route";
 import contactRoute from "./contact.route";
+import careerRoute from "./career.route";
 const router = express.Router();
 
 const defaultRoutes = [
@@ -31,6 +32,10 @@ const defaultRoutes = [
     {
         path: '/contact',
         route: industryRoute
+    },
+    {
+        path: '/career',
+        route: careerRoute
     }
 ];
 

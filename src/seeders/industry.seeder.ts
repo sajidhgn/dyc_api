@@ -93,7 +93,7 @@ const sampleData = {
 async function seedDatabase() {
     try {
         // Clear existing data
-        await IndustryModel.deleteMany({});
+        await IndustryModel.deleteMany({}).maxTimeMS(30000);;
 
         // Insert new data
         await IndustryModel.create(sampleData);

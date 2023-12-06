@@ -173,7 +173,7 @@ const sampleData = {
 async function seedDatabase() {
     try {
         // Clear existing data
-        await AboutModel.deleteMany({});
+        await AboutModel.deleteMany({}).maxTimeMS(30000);
 
         // Insert new data
         await AboutModel.create(sampleData);

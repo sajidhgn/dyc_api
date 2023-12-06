@@ -52,7 +52,7 @@ const sampleData = {
 async function seedDatabase() {
     try {
         // Clear existing data
-        await ContactModel.deleteMany({});
+        await ContactModel.deleteMany({}).maxTimeMS(30000);;
 
         // Insert new data
         await ContactModel.create(sampleData);

@@ -32,8 +32,6 @@ export const LongTermPartnership = async (req: any, res: any) => {
 };
 
 
-
-
 // Get List
 export const ContactData = async (req: any, res: any) => {
     try {
