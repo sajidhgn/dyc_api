@@ -3,6 +3,7 @@ import userRoute from "./user.route";
 import homeRoute from "./home.route";
 import aboutRoute from "./about.route";
 import servicesRoute from "./services.route";
+import industryRoute from "./industry.route";
 const router = express.Router();
 
 const defaultRoutes = [
@@ -21,6 +22,10 @@ const defaultRoutes = [
     {
         path: '/service',
         route: servicesRoute
+    },
+    {
+        path: '/industry',
+        route: industryRoute
     }
 ];
 

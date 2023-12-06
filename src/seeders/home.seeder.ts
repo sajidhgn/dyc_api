@@ -498,7 +498,7 @@ async function seedDatabase() {
         // Insert new data
         await HomeModel.create(sampleData);
 
-        console.log('Database seeded successfully.');
+        console.log('home seeded successfully.');
     } catch (error) {
         console.error('Error seeding database:', error);
     } finally {

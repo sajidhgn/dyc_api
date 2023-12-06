@@ -4,7 +4,7 @@ import {checkUserAuth} from "../middlewares/auth.helper";
 const router = express.Router();
 
 const servicesRoute = router
-    .post('/list',checkUserAuth, servicesController.ServicesData)
+    .post('/list', servicesController.ServicesData)
     .put('/banner/:id', checkUserAuth, servicesController.Banner)
     .put('/banner_lower/:id',checkUserAuth, servicesController.BannerLower)
     .put('/otherservices/:id',checkUserAuth, servicesController.OtherServices)

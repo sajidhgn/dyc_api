@@ -178,7 +178,7 @@ async function seedDatabase() {
         // Insert new data
         await AboutModel.create(sampleData);
 
-        console.log('Database seeded successfully.');
+        console.log('about seeded successfully.');
     } catch (error) {
         console.error('Error seeding database:', error);
     } finally {
