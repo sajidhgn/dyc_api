@@ -12,6 +12,6 @@ const aboutRoute = router
     .put('/customizesolution/:id', checkUserAuth, aboutController.CustomizeSolution)
     .put('/companyhistory/:id', checkUserAuth, aboutController.CompanyHistory)
     .put('/awesomesection/:id', checkUserAuth, aboutController.AwesomeSection)
-    .put('/portfolionumbers/:id', checkUserAuth, aboutController.PorfolioNumbers)
+    .put('/portfolionumbers/:id', checkUserAuth, aboutController.PortfolioNumbers)
     .put('/reviews/:id', checkUserAuth, aboutController.ManagementReviews)
 export default aboutRoute;

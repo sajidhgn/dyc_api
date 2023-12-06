@@ -108,9 +108,9 @@ export const AwesomeSection = async (req: any, res: any) => {
 };
 
 // PorfolioNumbers section
-export const PorfolioNumbers = async (req: any, res: any) => {
+export const PortfolioNumbers = async (req: any, res: any) => {
     try {
-        const data = await AboutModel.findByIdAndUpdate(req.params.id, { $set: { porfolio_numbers: req.body.payload } });
+        const data = await AboutModel.findByIdAndUpdate(req.params.id, { $set: { portfolio_numbers: req.body.payload } });
 
         if (!data) {
             return  res.status(404).json({ "status": "error",message: 'Data not found' });
