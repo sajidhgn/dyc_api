@@ -6,12 +6,14 @@ const AboutpageSchema: Schema = new Schema({
         description: {type: String, required: true},
         btnLink: {type: String, required: true}
     },
-    banner_slider: [
-        {
-            title: {type: String, required: true},
-            description: {type: String, required: true}
-        }
-    ],
+    banner_slider: {
+        list:[
+            {
+                title: {type: String, required: true},
+                description: {type: String, required: true}
+            }
+        ]
+    },
     about_section: {
         title: {type: String, required: true},
         description: {type: String, required: true},
@@ -56,12 +58,14 @@ const AboutpageSchema: Schema = new Schema({
         ]
     },
 
-    porfolio_numbers: [
-        {
-            title: {type: String, required: true},
-            subTitle: {type: String, required: true}
-        }
-    ],
+    porfolio_numbers: {
+        list:[
+            {
+                title: {type: String, required: true},
+                subTitle: {type: String, required: true}
+            }
+        ]
+    },
 
     management_reviews: {
         title: {type: String, required: true},

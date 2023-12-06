@@ -12,21 +12,23 @@ const sampleData = {
         description: "lorem ipsum data",
         btnLink: "/"
     },
-    banner_slider: [
-        {
-            title: "demo title1",
-            description: "lorem description"
-        },{
-            title: "demo title2",
-            description: "lorem description"
-        },{
-            title: "demo title3",
-            description: "lorem description"
-        },{
-            title: "demo title3",
-            description: "lorem description"
-        }
-    ],
+    banner_slider: {
+        list:[
+            {
+                title: "demo title1",
+                description: "lorem description"
+            },{
+                title: "demo title2",
+                description: "lorem description"
+            },{
+                title: "demo title3",
+                description: "lorem description"
+            },{
+                title: "demo title3",
+                description: "lorem description"
+            }
+        ]
+    },
     about_section: {
         title: "demo title3",
         description: "demo desecription",
@@ -123,22 +125,24 @@ const sampleData = {
         ]
     },
 
-    porfolio_numbers: [
-        {
-            title: "demo title3",
-            subTitle: "demo subtitle",
-        },
-        {
-            title: "demo title3",
-            subTitle: "demo subtitle",
-        }, {
-            title: "demo title3",
-            subTitle: "demo subtitle",
-        }, {
-            title: "demo title3",
-            subTitle: "demo subtitle",
-        }
-    ],
+    porfolio_numbers: {
+        list:[
+            {
+                title: "demo title3",
+                subTitle: "demo subtitle",
+            },
+            {
+                title: "demo title3",
+                subTitle: "demo subtitle",
+            }, {
+                title: "demo title3",
+                subTitle: "demo subtitle",
+            }, {
+                title: "demo title3",
+                subTitle: "demo subtitle",
+            }
+        ]
+    },
 
     management_reviews: {
         title: "demo title",
