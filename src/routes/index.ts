@@ -1,6 +1,7 @@
 const express = require('express');
 import userRoute from "./user.route";
 import homeRoute from "./home.route";
+import aboutRoute from "./about.route";
 import servicesRoute from "./services.route";
 const router = express.Router();
 
@@ -15,7 +16,7 @@ const defaultRoutes = [
     },
     {
         path: '/about',
-        route: servicesRoute
+        route: aboutRoute
     },
     {
         path: '/service',
