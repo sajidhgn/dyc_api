@@ -1,6 +1,6 @@
 // Import necessary packages and the Mongoose model
 import mongoose from 'mongoose';
-import {HomeModel} from "../models/home.model";
+import {AboutModel} from "../models/about.model";
 
 // Connect to MongoDB
 mongoose.connect('mongodb+srv://sajidhgn:ye3qG7AApMYJ7abk@nodejsexpress.qnniapr.mongodb.net/dycoders_db');
@@ -28,64 +28,138 @@ const sampleData = {
         }
     ],
     about_section: {
-        title: {type: String, required: true},
-        description: {type: String, required: true},
-        btnLink: {type: String, required: true},
-        img: {type: String, required: true},
-        videoLink: {type: String},
+        title: "demo title3",
+        description: "demo desecription",
+        btnLink: "/",
+        img: "img link",
+        videoLink: "video link",
     },
     leadership: {
-        title: {type: String, required: true},
+        title: "demo title3",
         list: [
             {
-                img: {type: String, required: true},
-                title: {type: String, required: true},
-                subTitle: {type: String, required: true},
+                img: "img link",
+                title: "demo title3",
+                subTitle: "demo subtitle3",
                 socialIcons: [
                     {
-                        icon: {type: String, required: true},
-                        iconLink: {type: String, required: true}
+                        icon: "img/icon",
+                        iconLink: "link"
+                    },
+                    {
+                        icon: "img/icon",
+                        iconLink: "link"
+                    }, {
+                        icon: "img/icon",
+                        iconLink: "link"
+                    }
+                ]
+            },
+            {
+                img: "img link",
+                title: "demo title3",
+                subTitle: "demo subtitle3",
+                socialIcons: [
+                    {
+                        icon: "img/icon",
+                        iconLink: "link"
+                    },
+                    {
+                        icon: "img/icon",
+                        iconLink: "link"
+                    }, {
+                        icon: "img/icon",
+                        iconLink: "link"
+                    }
+                ]
+            }, {
+                img: "img link",
+                title: "demo title3",
+                subTitle: "demo subtitle3",
+                socialIcons: [
+                    {
+                        icon: "img/icon",
+                        iconLink: "link"
+                    },
+                    {
+                        icon: "img/icon",
+                        iconLink: "link"
+                    }, {
+                        icon: "img/icon",
+                        iconLink: "link"
                     }
                 ]
             }
         ]
     },
     customize_solution: {
-        content: {type: String, required: true},
-        style: {type: String}
+        content: "html",
+        style: "css"
     },
     company_history: {
-        content: {type: String, required: true},
-        style: {type: String}
+        content: "html",
+        style: "css"
     },
 
 
     awesome_section: {
-        title: {type: String, required: true},
+        title: "demo title3",
         list: [
             {
-                icon: {type: String, required: true},
-                title: {type: String, required: true},
-                description: {type: String, required: true}
+                icon: "img/icon",
+                title: "demo title3",
+                description: "demo description",
+            },
+            {
+                icon: "img/icon",
+                title: "demo title3",
+                description: "demo description",
+            },
+            {
+                icon: "img/icon",
+                title: "demo title3",
+                description: "demo description",
             }
         ]
     },
 
     porfolio_numbers: [
         {
-            title: {type: String, required: true},
-            subTitle: {type: String, required: true}
+            title: "demo title3",
+            subTitle: "demo subtitle",
+        },
+        {
+            title: "demo title3",
+            subTitle: "demo subtitle",
+        }, {
+            title: "demo title3",
+            subTitle: "demo subtitle",
+        }, {
+            title: "demo title3",
+            subTitle: "demo subtitle",
         }
     ],
 
     management_reviews: {
-        title: {type: String, required: true},
+        title: "demo title",
         list: [
             {
-                img: {type: String, required: true},
-                title: {type: String, required: true},
-                subTitle: {type: String, required: true},
-                description: {type: String, required: true}
+                img: "img link1",
+                title: "demo title3",
+                subTitle: "demo subtitle",
+                description: "demo description",
+            },
+            {
+                img: "img link2",
+                title: "demo title3",
+                subTitle: "demo subtitle",
+                description: "demo description",
+            },
+            {
+                img: "img link3",
+                title: "demo title3",
+                subTitle: "demo subtitle",
+                description: "demo description",
             }
         ]
     }
@@ -95,10 +169,10 @@ const sampleData = {
 async function seedDatabase() {
     try {
         // Clear existing data
-        await HomeModel.deleteMany({});
+        await AboutModel.deleteMany({});
 
         // Insert new data
-        await HomeModel.create(sampleData);
+        await AboutModel.create(sampleData);
 
         console.log('Database seeded successfully.');
     } catch (error) {
