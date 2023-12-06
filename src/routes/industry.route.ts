@@ -3,7 +3,7 @@ import {industryController} from "../controllers";
 import {checkUserAuth} from "../middlewares/auth.helper";
 const router = express.Router();
 
-const servicesRoute = router
+const industryRoute = router
     .post('/list', industryController.IndustriesData)
     .put('/banner/:id', checkUserAuth, industryController.Banner)
     .put('/bannerlower/:id', checkUserAuth, industryController.BannerLower)
@@ -13,4 +13,4 @@ const servicesRoute = router
     .put('/readynext/:id', checkUserAuth, industryController.ReadyNext)
     .put('/specializedteam/:id', checkUserAuth, industryController.SpecializedTeam)
     .put('/standoutsection/:id', checkUserAuth, industryController.StandoutSection)
-export default servicesRoute;
+export default industryRoute;

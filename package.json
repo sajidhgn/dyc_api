@@ -10,7 +10,8 @@
     "seed:about": "ts-node src/seeders/about.seeder.ts",
     "seed:services": "ts-node src/seeders/services.seeder.ts",
     "seed:industry": "ts-node src/seeders/industry.seeder.ts",
-    "seed:all": "yarn seed:home && yarn seed:about && yarn seed:services && yarn seed:industry"
+    "seed:contact": "ts-node src/seeders/contact.seeder.ts",
+    "seed:all": "yarn seed:home && yarn seed:about && yarn seed:services && yarn seed:industry && yarn seed:contact"
   },
   "devDependencies": {
     "@types/body-parser": "^1.19.5",

@@ -5,6 +5,7 @@ const router = express.Router();
 
 const aboutRoute = router
     .post('/list', aboutController.AboutData)
+    .put('/banner/:id', checkUserAuth, aboutController.Banner)
     .put('/bannerslider/:id', checkUserAuth, aboutController.BannerSlider)
     .put('/aboutus/:id', checkUserAuth, aboutController.AboutSection)
     .put('/leadership/:id', checkUserAuth, aboutController.LeaderShip)
