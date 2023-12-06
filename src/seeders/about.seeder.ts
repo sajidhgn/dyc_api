@@ -125,7 +125,7 @@ const sampleData = {
         ]
     },
 
-    porfolio_numbers: {
+    portfolio_numbers: {
         list:[
             {
                 title: "demo title3",

@@ -58,7 +58,7 @@ const AboutpageSchema: Schema = new Schema({
         ]
     },
 
-    porfolio_numbers: {
+    portfolio_numbers: {
         list:[
             {
                 title: {type: String, required: true},
