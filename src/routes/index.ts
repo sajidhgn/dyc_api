@@ -31,7 +31,7 @@ const defaultRoutes = [
     },
     {
         path: '/contact',
-        route: industryRoute
+        route: contactRoute
     },
     {
         path: '/career',
