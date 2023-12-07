@@ -58,6 +58,49 @@ const sampleData = {
                 description: "description"
             }
         ]
+    },
+    case_studies: {
+        title: "title",
+        list: [
+            {
+                img: "img link",
+                title: "title",
+                short_description: "description",
+                long_description: "description",
+                technologies: {
+                    list:[
+                        {
+                            title:"Nodejs",
+                        },
+                        {
+                            title:"React",
+                        }
+                    ]
+                }
+            }
+        ]
+    },
+    team:{
+        title: "title",
+        list:[
+            {
+                icon: "iocn or miage",
+                title: "title",
+            }
+        ]
+    },
+    technologies:{
+        title: "title",
+        list:[
+            {
+                icon: "icon or image",
+                title: "Nodejs",
+            },
+            {
+                icon: "icon or image",
+                title: "Nodejs",
+            }
+        ]
     }
 
 };

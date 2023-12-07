@@ -15,34 +15,45 @@ const sampleData = {
     portfolio_section: {
         list: [
             {
-                title: "blog 1",
+                title: "title",
                 img: "img link",
-                video: "video link",
-                category: "category",
-                author: "author",
-                posted_date: "date",
-                short_description: "short description",
-                long_description: "long description",
-            },
-            {
-                title: "blog 1",
-                img: "img link",
-                video: "video link",
-                category: "category",
-                author: "author",
-                posted_date: "date",
-                short_description: "short description",
-                long_description: "long description",
-            },
-            {
-                title: "blog 1",
-                img: "img link",
-                video: "video link",
-                category: "category",
-                author: "author",
-                posted_date: "date",
-                short_description: "short description",
-                long_description: "long description",
+                video: "video optional",
+                description: "description",
+                technologies: {
+                    list:[
+                        {
+                            icon:"img or icon",
+                            title:"title",
+                        },
+                        {
+                            icon:"img or icon",
+                            title:"title",
+                        },
+                        {
+                            icon:"img or icon",
+                            title:"title",
+                        }
+
+                    ]
+                },
+                introduction: {
+                    content: "html",
+                    style: "css"
+                },
+                content_section:[
+                    {
+                        title:"title",
+                        img:"img link"
+                    },
+                    {
+                        title:"title",
+                        img:"img link"
+                    },
+                    {
+                        title:"title",
+                        img:"img link"
+                    }
+                ]
             }
         ]
     }

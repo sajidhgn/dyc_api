@@ -48,11 +48,55 @@ export const Benefits = async (req: any, res: any) => {
 };
 
 
-
 // Features
 export const Features = async (req: any, res: any) => {
     try {
         const data = await BlockchainModel.findByIdAndUpdate(req.params.id, { $set: { features: req.body.payload } });
+
+        if (!data) {
+            return  res.status(404).json({ "status": "error",message: 'Data not found' });
+        }
+        res.status(200).json({ "status": "success",message: 'Data updated successfully'});
+    } catch (error) {
+
+        res.status(500).json({ "status": "error", message: 'Internal server error' });
+    }
+};
+
+// Case Studies
+export const CaseStudies = async (req: any, res: any) => {
+    try {
+        const data = await BlockchainModel.findByIdAndUpdate(req.params.id, { $set: { case_studies: req.body.payload } });
+
+        if (!data) {
+            return  res.status(404).json({ "status": "error",message: 'Data not found' });
+        }
+        res.status(200).json({ "status": "success",message: 'Data updated successfully'});
+    } catch (error) {
+
+        res.status(500).json({ "status": "error", message: 'Internal server error' });
+    }
+};
+
+// Team
+export const Team = async (req: any, res: any) => {
+    try {
+        const data = await BlockchainModel.findByIdAndUpdate(req.params.id, { $set: { team: req.body.payload } });
+
+        if (!data) {
+            return  res.status(404).json({ "status": "error",message: 'Data not found' });
+        }
+        res.status(200).json({ "status": "success",message: 'Data updated successfully'});
+    } catch (error) {
+
+        res.status(500).json({ "status": "error", message: 'Internal server error' });
+    }
+};
+
+// Technologies
+export const Technologies = async (req: any, res: any) => {
+    try {
+        const data = await BlockchainModel.findByIdAndUpdate(req.params.id, { $set: { technologies: req.body.payload } });
 
         if (!data) {
             return  res.status(404).json({ "status": "error",message: 'Data not found' });

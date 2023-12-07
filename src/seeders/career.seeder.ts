@@ -22,7 +22,7 @@ const sampleData = {
             {
                 title: "title",
                 posted_date: "posted date",
-                category: "category",
+                category: "Development",
                 experience: "experience",
                 gender: "male",
                 qualification: "qualification",
@@ -44,7 +44,7 @@ const sampleData = {
             {
                 title: "title",
                 posted_date: "posted date",
-                category: "category",
+                category: "Designing",
                 experience: "experience",
                 gender: "female",
                 qualification: "qualification",
@@ -65,7 +65,7 @@ const sampleData = {
             },  {
                 title: "title",
                 posted_date: "posted date",
-                category: "category",
+                category: "Human Resources",
                 experience: "experience",
                 gender: "male",
                 qualification: "qualification",

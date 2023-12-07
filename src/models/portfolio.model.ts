@@ -11,12 +11,27 @@ const PortfoliopageSchema: Schema = new Schema({
             {
                 title: {type: String, required: true},
                 img: {type: String, required: true},
+                description: {type: String, required: true},
                 video: {type: String},
-                category: {type: String, required: true},
-                author: {type: String, required: true},
-                posted_date: {type: String, required: true},
-                short_description: {type: String, required: true},
-                long_description: {type: String, required: true}
+                technologies: {
+                    list:[
+                        {
+                            icon:{type: String, required: true},
+                            title:{type: String, required: true},
+                        }
+
+                    ]
+                },
+                introduction: {
+                    content: {type: String, required: true},
+                    style: {type: String, required: true}
+                },
+                content_section:[
+                    {
+                        title:{type: String, required: true},
+                        img:{type: String, required: true}
+                    }
+                ]
             }
         ]
     }

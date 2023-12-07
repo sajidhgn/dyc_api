@@ -9,5 +9,8 @@ const blockchainRoute = router
     .put('/whychooseus/:id', checkUserAuth, blockchainController.WhyChooseUs)
     .put('/benefits/:id', checkUserAuth, blockchainController.Benefits)
     .put('/features/:id', checkUserAuth, blockchainController.Features)
+    .put('/casestudies/:id', checkUserAuth, blockchainController.CaseStudies)
+    .put('/team/:id', checkUserAuth, blockchainController.Team)
+    .put('/technologies/:id', checkUserAuth, blockchainController.Technologies)
 
 export default blockchainRoute;

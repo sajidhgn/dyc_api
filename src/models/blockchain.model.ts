@@ -32,6 +32,42 @@ const BlockchainpageSchema: Schema = new Schema({
                 description: {type: String, required: true}
             }
         ]
+    },
+    case_studies: {
+        title: {type: String, required: true},
+        list: [
+            {
+                img: {type: String, required: true},
+                title: {type: String, required: true},
+                short_description: {type: String, required: true},
+                long_description: {type: String, required: true},
+                technologies: {
+                    list:[
+                        {
+                            title:{type: String, required: true},
+                        }
+                    ]
+                }
+            }
+        ]
+    },
+    team:{
+        title: {type: String, required: true},
+        list:[
+            {
+                icon: {type: String, required: true},
+                title: {type: String, required: true},
+            }
+        ]
+    },
+    technologies:{
+        title: {type: String, required: true},
+        list:[
+            {
+                icon: {type: String, required: true},
+                title: {type: String, required: true},
+            }
+        ]
     }
 }, {timestamps: true});
 
