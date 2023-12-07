@@ -8,5 +8,6 @@ const dedicatedRoute = router
     .put('/banner/:id', checkUserAuth, dedicatedController.Banner)
     .put('/features/:id', checkUserAuth, dedicatedController.Features)
     .put('/team/:id', checkUserAuth, dedicatedController.Team)
+    .put('/advantages/:id', checkUserAuth, dedicatedController.Advantages)
     .put('/technologies/:id', checkUserAuth, dedicatedController.Technologies)
 export default dedicatedRoute;
