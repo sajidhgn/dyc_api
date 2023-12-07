@@ -5,3 +5,5 @@ export const aboutController = require('./about.Controller');
 export const industryController = require('./industry.Controller');
 export const contactController = require('./contact.Controller');
 export const careerController = require('./career.Controller');
+export const portfolioController = require('./portfolio.Controller');
+export const blogController = require('./blog.Controller');

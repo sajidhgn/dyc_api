@@ -12,7 +12,9 @@
     "seed:industry": "ts-node src/seeders/industry.seeder.ts",
     "seed:contact": "ts-node src/seeders/contact.seeder.ts",
     "seed:career": "ts-node src/seeders/career.seeder.ts",
-    "seed:all": "yarn seed:home && yarn seed:about && yarn seed:services && yarn seed:industry && yarn seed:contact && yarn seed:career"
+    "seed:portfolio": "ts-node src/seeders/portfolio.seeder.ts",
+    "seed:blog": "ts-node src/seeders/blog.seeder.ts",
+    "seed:all": "yarn seed:home && yarn seed:about && yarn seed:services && yarn seed:industry && yarn seed:contact && yarn seed:career && yarn seed:portfolio  && yarn seed:blog"
   },
   "devDependencies": {
     "@types/body-parser": "^1.19.5",
