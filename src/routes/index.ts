@@ -8,6 +8,7 @@ import contactRoute from "./contact.route";
 import careerRoute from "./career.route";
 import portfolioRoute from "./portfolio.route";
 import blogRoute from "./blog.route";
+import pricingRoute from "./pricing.route";
 const router = express.Router();
 
 const defaultRoutes = [
@@ -46,6 +47,10 @@ const defaultRoutes = [
     {
         path: '/blog',
         route: blogRoute
+    },
+    {
+        path: '/pricing',
+        route: pricingRoute
     }
 ];
 

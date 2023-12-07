@@ -7,6 +7,6 @@ const careerRoute = router
     .post('/list', careerController.CareerData)
     .put('/banner/:id', checkUserAuth, careerController.Banner)
     .put('/collaboration/:id', checkUserAuth, careerController.Collaboration)
-    .put('/collaboration/:id', checkUserAuth, careerController.CurrentHiring)
+    .put('/currenthiring/:id', checkUserAuth, careerController.CurrentHiring)
     .put('/totalperks/:id', checkUserAuth, careerController.TotalPerks)
 export default careerRoute;

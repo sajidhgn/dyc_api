@@ -14,6 +14,7 @@
     "seed:career": "ts-node src/seeders/career.seeder.ts",
     "seed:portfolio": "ts-node src/seeders/portfolio.seeder.ts",
     "seed:blog": "ts-node src/seeders/blog.seeder.ts",
+    "seed:pricing": "ts-node src/seeders/pricing.seeder.ts",
     "seed:all": "yarn seed:home && yarn seed:about && yarn seed:services && yarn seed:industry && yarn seed:contact && yarn seed:career && yarn seed:portfolio  && yarn seed:blog"
   },
   "devDependencies": {
