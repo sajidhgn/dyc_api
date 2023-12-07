@@ -22,7 +22,22 @@ const sampleData = {
                 description: "description",
                 btnLink: "btn link",
                 featured: false,
-                category: "basic, standard, enterprize",
+                category: "basic",
+            },
+            {
+                title: "title",
+                icon: "icon or img link",
+                description: "description",
+                btnLink: "btn link",
+                featured: true,
+                category: "standard",
+            }, {
+                title: "title",
+                icon: "icon or img link",
+                description: "description",
+                btnLink: "btn link",
+                featured: false,
+                category: "pro",
             }
         ]
     },

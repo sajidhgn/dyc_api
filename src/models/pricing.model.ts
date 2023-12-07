@@ -16,7 +16,11 @@ const PricingpageSchema: Schema = new Schema({
                 description: {type: String, required: true},
                 btnLink: {type: String, required: true},
                 featured: {type: Boolean, required: true},
-                category: {type: String, required: true},
+                category: {
+                    type: String,
+                    required: true,
+                    enum: ['basic', 'standard', 'pro']
+                },
             }
         ]
     },

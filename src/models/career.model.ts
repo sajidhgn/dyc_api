@@ -18,7 +18,7 @@ const CareerpageSchema: Schema = new Schema({
                 posted_date: {type: String, required: true},
                 category: {type: String, required: true},
                 experience: {type: String, required: true},
-                gender: {type: String, required: true},
+                gender: {type: String, required: true, enum: ["male", "female"]},
                 qualification: {type: String, required: true},
                 job_description: {type: String, required: true},
                 responsibilities: {type: String, required: true},
