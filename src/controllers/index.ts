@@ -8,3 +8,4 @@ export const careerController = require('./career.Controller');
 export const portfolioController = require('./portfolio.Controller');
 export const blogController = require('./blog.Controller');
 export const pricingController = require('./pricing.Controller');
+export const dedicatedController = require('./dedicated.Controller');
