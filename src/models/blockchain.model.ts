@@ -41,13 +41,11 @@ const BlockchainpageSchema: Schema = new Schema({
                 title: {type: String, required: true},
                 short_description: {type: String, required: true},
                 long_description: {type: String, required: true},
-                technologies: {
-                    list:[
+                technologies: [
                         {
                             title:{type: String, required: true},
                         }
-                    ]
-                }
+                ]
             }
         ]
     },

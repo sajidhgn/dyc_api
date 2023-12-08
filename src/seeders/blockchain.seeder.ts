@@ -67,8 +67,8 @@ const sampleData = {
                 title: "title",
                 short_description: "description",
                 long_description: "description",
-                technologies: {
-                    list:[
+
+                    technologies:[
                         {
                             title:"Nodejs",
                         },
@@ -76,7 +76,6 @@ const sampleData = {
                             title:"React",
                         }
                     ]
-                }
             }
         ]
     },

@@ -10,3 +10,4 @@ export const blogController = require('./blog.Controller');
 export const pricingController = require('./pricing.Controller');
 export const dedicatedController = require('./dedicated.Controller');
 export const blockchainController = require('./blockchain.Controller');
+export const gameController = require('./game.Controller');

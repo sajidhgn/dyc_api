@@ -42,7 +42,7 @@ const ServicepageSchema: Schema = new Schema({
     },
     road_map: {
         content: {type: String, required: true},
-        style: {type: String, required: true}
+        style: {type: String}
     },
     team: {
         title: {type: String, required: true},

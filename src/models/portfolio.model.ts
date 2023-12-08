@@ -24,7 +24,7 @@ const PortfoliopageSchema: Schema = new Schema({
                 },
                 introduction: {
                     content: {type: String, required: true},
-                    style: {type: String, required: true}
+                    style: {type: String}
                 },
                 content_section:[
                     {

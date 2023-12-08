@@ -17,7 +17,8 @@
     "seed:pricing": "ts-node src/seeders/pricing.seeder.ts",
     "seed:dedicated": "ts-node src/seeders/dedicated.seeder.ts",
     "seed:blockchain": "ts-node src/seeders/blockchain.seeder.ts",
-    "seed:all": "yarn seed:home && yarn seed:about && yarn seed:services && yarn seed:industry && yarn seed:contact && yarn seed:career && yarn seed:portfolio  && yarn seed:blog  && yarn seed:dedicated && yarn seed:blockchain"
+    "seed:game": "ts-node src/seeders/game.seeder.ts",
+    "seed:all": "yarn seed:home && yarn seed:about && yarn seed:services && yarn seed:industry && yarn seed:contact && yarn seed:career && yarn seed:portfolio && yarn seed:game  && yarn seed:blog  && yarn seed:dedicated && yarn seed:blockchain"
   },
   "devDependencies": {
     "@types/body-parser": "^1.19.5",
