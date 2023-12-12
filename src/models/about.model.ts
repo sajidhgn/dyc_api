@@ -46,7 +46,6 @@ const AboutpageSchema: Schema = new Schema({
         style: {type: String}
     },
 
-
     awesome_section: {
         title: {type: String, required: true},
         list: [

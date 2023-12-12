@@ -1,7 +1,6 @@
 import jwt from "jsonwebtoken";
 import config from "../config/config";
 import {UserModel} from "../models/user.model";
-import {userValid} from "../validations/user.schema";
 import {generateToken} from "../middlewares/auth.helper";
 import passport from '../config/passport';
 
@@ -18,10 +17,6 @@ export const userRegistration = async (req: any, res: any, next: any) => {
         res.json({"status": "warning", "message": "Username already exists"})
     } else {
         try {
-            const validationResult = userValid.validate(req.body);
-            if (validationResult.error) {
-                return res.status(400).json({error: validationResult.error.details[0].message});
-            }
             const getuser = await UserModel.create(req.body);
             const {username, email, password, _id, role} = getuser
 

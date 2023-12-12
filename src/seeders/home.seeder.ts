@@ -452,6 +452,17 @@ const sampleData = {
                     icon: 'sample_icon_url',
                     description: 'Industry 1 Description',
                     btnlink: 'sample_industry_link',
+                    imgsList:[
+                        {
+                            img: "img link1"
+                        },
+                        {
+                            img: "img link2"
+                        },
+                        {
+                            img: "img link2"
+                        }
+                    ]
                 },
 
             ],

@@ -58,7 +58,12 @@ const HomepageSchema: Schema = new Schema({
                 title: {type: String, required: true},
                 icon: {type: String, required: true},
                 description: {type: String, required: true},
-                btnlink: {type: String, required: true}
+                btnlink: {type: String, required: true},
+                imgsList:[
+                    {
+                        img: {type: String, required: true}
+                    }
+                ]
             }
         ]
     },
