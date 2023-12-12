@@ -4,27 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cc366c5f-9194-4292-9267-628f6dadf1d9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/validations/validateAbout.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/validations/validateBlockchain.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/validations/validateBlog.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/validations/validateCareer.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/validations/validateContact.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/validations/validateDedicated.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/validations/validateGame.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/validations/validateHome.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/validations/validateIndustry.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/validations/validatePortfolio.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/validations/validatePricing.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/validations/validateServices.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controllers/user.Controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/user.Controller.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/about.model.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/about.model.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/home.model.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/home.model.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/user.route.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/user.route.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/seeders/home.seeder.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/seeders/home.seeder.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/validations/user.schema.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/validations/validateUser.ts" afterDir="false" />
-    </list>
+    <list default="true" id="cc366c5f-9194-4292-9267-628f6dadf1d9" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -87,7 +67,7 @@
       <workItem from="1702037388147" duration="233000" />
       <workItem from="1702037638310" duration="5604000" />
       <workItem from="1702094669228" duration="17000" />
-      <workItem from="1702142185440" duration="1061000" />
+      <workItem from="1702142185440" duration="1243000" />
     </task>
     <servers />
   </component>
