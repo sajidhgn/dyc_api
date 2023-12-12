@@ -133,6 +133,7 @@ export const PortfolioSection = async (req: any, res: any) => {
     }
 };
 
+
 // Get Home
 export const homeData = async (req: any, res: any) => {
     try {
