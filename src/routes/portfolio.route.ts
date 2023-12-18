@@ -7,5 +7,5 @@ const portfolioRoute = router
     .post('/list', portfolioController.PortfolioData)
     .put('/banner/:id', checkUserAuth, portfolioController.Banner)
     .put('/portfoliosection/:id', checkUserAuth, portfolioController.PortfolioSection)
-    .get('/:title', portfolioController.GetPortfolio)
+    .post('/single', portfolioController.GetPortfolio)
 export default portfolioRoute;

@@ -5,18 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cc366c5f-9194-4292-9267-628f6dadf1d9" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controllers/blog.Controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/blog.Controller.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controllers/career.Controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/career.Controller.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controllers/portfolio.Controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/portfolio.Controller.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/blog.model.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/blog.model.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/career.model.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/career.model.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/portfolio.model.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/portfolio.model.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/blog.route.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/blog.route.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/routes/career.route.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/career.route.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/routes/portfolio.route.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/portfolio.route.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/seeders/blog.seeder.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/seeders/blog.seeder.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/seeders/career.seeder.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/seeders/career.seeder.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,7 +73,7 @@
       <workItem from="1702142185440" duration="17365000" />
       <workItem from="1702541326976" duration="1261000" />
       <workItem from="1702550022793" duration="1202000" />
-      <workItem from="1702899486204" duration="6984000" />
+      <workItem from="1702899486204" duration="7133000" />
     </task>
     <task id="LOCAL-00001" summary="minor changes">
       <created>1702370675806</created>

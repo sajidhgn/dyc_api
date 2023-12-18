@@ -9,5 +9,5 @@ const careerRoute = router
     .put('/collaboration/:id', checkUserAuth, careerController.Collaboration)
     .put('/currenthiring/:id', checkUserAuth, careerController.CurrentHiring)
     .put('/totalperks/:id', checkUserAuth, careerController.TotalPerks)
-    .get('/:title', careerController.GetCareer)
+    .post('/single', careerController.GetCareer)
 export default careerRoute;
