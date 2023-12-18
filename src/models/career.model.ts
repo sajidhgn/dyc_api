@@ -19,8 +19,7 @@ const CareerpageSchema: Schema = new Schema({
         title: {type: String, required: true},
         list: [
             {
-                _id: false,
-                customId: {
+                title: {
                     type: String,
                     unique: true,
                     required: true,

@@ -1,5 +1,5 @@
 const express = require('express');
-import {careerController} from "../controllers";
+import {blogController, careerController} from "../controllers";
 import {checkUserAuth} from "../middlewares/auth.helper";
 const router = express.Router();
 
@@ -9,4 +9,5 @@ const careerRoute = router
     .put('/collaboration/:id', checkUserAuth, careerController.Collaboration)
     .put('/currenthiring/:id', checkUserAuth, careerController.CurrentHiring)
     .put('/totalperks/:id', checkUserAuth, careerController.TotalPerks)
+    .get('/:title', careerController.GetCareer)
 export default careerRoute;

@@ -14,7 +14,7 @@ const PortfoliopageSchema: Schema = new Schema({
     portfolio_section: {
         list: [
             {
-                title: {type: String, required: true},
+                title: {type: String, required: true, unique:true},
                 img: {type: String, required: true},
                 description: {type: String, required: true},
                 video: {type: String},

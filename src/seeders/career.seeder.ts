@@ -25,7 +25,7 @@ const sampleData = {
         title: "title",
         list: [
             {
-                customId: "title2",
+                title: "title2",
                 posted_date: "posted date",
                 category: "Development",
                 experience: "experience",
@@ -37,7 +37,7 @@ const sampleData = {
                 job_skills: ["html","css","javascript"],
             },
             {
-                customId: "title1",
+                title: "title1",
                 posted_date: "posted date",
                 category: "Designing",
                 experience: "experience",
@@ -48,7 +48,7 @@ const sampleData = {
                 requirements: "requirements",
                 job_skills: ["html","css","javascript"],
             },  {
-                customId: "title3",
+                title: "title3",
                 posted_date: "posted date",
                 category: "Human Resources",
                 experience: "experience",

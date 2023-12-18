@@ -14,12 +14,7 @@ const BlogpageSchema: Schema = new Schema({
     blog_section: {
         list: [
             {
-                _id: false,
-                customId: {
-                    type: String,
-                    unique: true,
-                    required: true,
-                },
+                title: {type: String, required: true, unique:true},
                 img: {type: String, required: true},
                 video: {type: String},
                 category: {type: String, required: true},
