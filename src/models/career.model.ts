@@ -1,6 +1,11 @@
 import mongoose, {Schema, Document} from 'mongoose';
 
 const CareerpageSchema: Schema = new Schema({
+    meta_tags:{
+        metaTitle: {type: String},
+        slug: {type: String},
+        MetaDescription: {type: String},
+    },
     banner: {
         title: {type: String, required: true},
         description: {type: String, required: true},
@@ -14,7 +19,12 @@ const CareerpageSchema: Schema = new Schema({
         title: {type: String, required: true},
         list: [
             {
-                title: {type: String, required: true},
+                _id: false,
+                customId: {
+                    type: String,
+                    unique: true,
+                    required: true,
+                },
                 posted_date: {type: String, required: true},
                 category: {type: String, required: true, enum: ["Development", "Designing", "Quality Assurance", "Human Resources", "Business Development"]},
                 experience: {type: String, required: true},
@@ -23,11 +33,7 @@ const CareerpageSchema: Schema = new Schema({
                 job_description: {type: String, required: true},
                 responsibilities: {type: String, required: true},
                 requirements: {type: String, required: true},
-                job_skills: [
-                    {
-                        title: {type: String, required: true}
-                    }
-                ],
+                job_skills: [],
             }
         ]
     },

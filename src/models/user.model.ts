@@ -3,6 +3,11 @@ import {bcryptPassword} from "../middlewares/auth.helper";
 
 
 const UserSchema: Schema = new Schema({
+    meta_tags:{
+        metaTitle: {type: String},
+        slug: {type: String},
+        MetaDescription: {type: String},
+    },
     username: {
         type: String,
         required: true,

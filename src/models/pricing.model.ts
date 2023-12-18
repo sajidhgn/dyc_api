@@ -1,6 +1,11 @@
 import mongoose, {Schema, Document} from 'mongoose';
 
 const PricingpageSchema: Schema = new Schema({
+    meta_tags:{
+        metaTitle: {type: String},
+        slug: {type: String},
+        MetaDescription: {type: String},
+    },
     banner: {
         title: {type: String, required: true},
         description: {type: String, required: true},
@@ -13,9 +18,14 @@ const PricingpageSchema: Schema = new Schema({
             {
                 title: {type: String, required: true},
                 icon: {type: String, required: true},
-                description: {type: String, required: true},
+                description: [
+                    {
+                        title: {type: String, required: true}
+                    }
+                ],
                 btnLink: {type: String, required: true},
                 featured: {type: Boolean, required: true},
+                tag: {type: String},
                 category: {
                     type: String,
                     required: true,

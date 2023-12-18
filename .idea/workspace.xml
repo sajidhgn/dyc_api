@@ -4,7 +4,27 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cc366c5f-9194-4292-9267-628f6dadf1d9" name="Changes" comment="" />
+    <list default="true" id="cc366c5f-9194-4292-9267-628f6dadf1d9" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/about.model.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/about.model.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/blockchain.model.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/blockchain.model.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/blog.model.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/blog.model.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/career.model.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/career.model.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/contact.model.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/contact.model.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/dedicated.model.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/dedicated.model.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/game.model.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/game.model.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/home.model.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/home.model.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/industry.model.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/industry.model.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/portfolio.model.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/portfolio.model.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/pricing.model.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/pricing.model.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/services.model.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/services.model.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/user.model.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/user.model.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/seeders/about.seeder.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/seeders/about.seeder.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/seeders/career.seeder.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/seeders/career.seeder.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/seeders/home.seeder.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/seeders/home.seeder.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/seeders/pricing.seeder.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/seeders/pricing.seeder.ts" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -67,11 +87,25 @@
       <workItem from="1702037388147" duration="233000" />
       <workItem from="1702037638310" duration="5604000" />
       <workItem from="1702094669228" duration="17000" />
-      <workItem from="1702142185440" duration="1336000" />
+      <workItem from="1702142185440" duration="17365000" />
+      <workItem from="1702541326976" duration="1261000" />
+      <workItem from="1702550022793" duration="1202000" />
     </task>
+    <task id="LOCAL-00001" summary="minor changes">
+      <created>1702370675806</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1702370675806</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="minor changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="minor changes" />
   </component>
 </project>

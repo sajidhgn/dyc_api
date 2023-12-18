@@ -1,6 +1,11 @@
 import mongoose, {Schema, Document} from 'mongoose';
 
 const BlogpageSchema: Schema = new Schema({
+    meta_tags:{
+        metaTitle: {type: String},
+        slug: {type: String},
+        MetaDescription: {type: String},
+    },
     banner: {
         title: {type: String, required: true},
         description: {type: String, required: true},
@@ -9,7 +14,12 @@ const BlogpageSchema: Schema = new Schema({
     blog_section: {
         list: [
             {
-                title: {type: String, required: true},
+                _id: false,
+                customId: {
+                    type: String,
+                    unique: true,
+                    required: true,
+                },
                 img: {type: String, required: true},
                 video: {type: String},
                 category: {type: String, required: true},

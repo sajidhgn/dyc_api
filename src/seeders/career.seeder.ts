@@ -7,9 +7,14 @@ mongoose.connect('mongodb+srv://sajidhgn:ye3qG7AApMYJ7abk@nodejsexpress.qnniapr.
 
 // Sample data for seeding
 const sampleData = {
+    meta_tags:{
+        metaTitle: "Careers at DyCoders | Explore Opportunities",
+        slug: "https://dycoders.com/careers",
+        MetaDescription: "Transform your vision into reality with our digital development expertise. From mobile apps to UX/UI and software scaling, we make it happen.",
+    },
     banner: {
-        title: "title",
-        description: "description",
+        title: "Explore <span class='text-primarys'>Opportunities</span>!",
+        description: "Join a DyCoders team where innovation thrives. Discover roles that challenge and inspire. Grow personally and professionally in an inclusive environment. Embrace diverse projects and make a tangible impact. Your journey starts here with us!",
         img: "img link"
     },
     collaboration: {
@@ -20,7 +25,7 @@ const sampleData = {
         title: "title",
         list: [
             {
-                title: "title",
+                customId: "title2",
                 posted_date: "posted date",
                 category: "Development",
                 experience: "experience",
@@ -29,20 +34,10 @@ const sampleData = {
                 job_description: "description",
                 responsibilities: "responsibilities",
                 requirements: "requirements",
-                job_skills: [
-                    {
-                        title: "one"
-                    },
-                    {
-                        title: "one"
-                    },
-                    {
-                        title: "one"
-                    }
-                ],
+                job_skills: ["html","css","javascript"],
             },
             {
-                title: "title",
+                customId: "title1",
                 posted_date: "posted date",
                 category: "Designing",
                 experience: "experience",
@@ -51,19 +46,9 @@ const sampleData = {
                 job_description: "description",
                 responsibilities: "responsibilities",
                 requirements: "requirements",
-                job_skills: [
-                    {
-                        title: "one"
-                    },
-                    {
-                        title: "one"
-                    },
-                    {
-                        title: "one"
-                    }
-                ],
+                job_skills: ["html","css","javascript"],
             },  {
-                title: "title",
+                customId: "title3",
                 posted_date: "posted date",
                 category: "Human Resources",
                 experience: "experience",
@@ -72,17 +57,7 @@ const sampleData = {
                 job_description: "description",
                 responsibilities: "responsibilities",
                 requirements: "requirements",
-                job_skills: [
-                    {
-                        title: "one"
-                    },
-                    {
-                        title: "one"
-                    },
-                    {
-                        title: "one"
-                    }
-                ],
+                job_skills: ["html","css","javascript"],
             }
         ]
     },

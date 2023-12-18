@@ -15,7 +15,7 @@ const sampleData = {
     blog_section: {
         list: [
             {
-                title: "blog 1",
+                customId: "blog 1",
                 img: "img link",
                 video: "video link",
                 category: "category",
@@ -25,7 +25,7 @@ const sampleData = {
                 long_description: "long description",
             },
             {
-                title: "blog 1",
+                customId: "blog 2",
                 img: "img link",
                 video: "video link",
                 category: "category",
@@ -35,7 +35,7 @@ const sampleData = {
                 long_description: "long description",
             },
             {
-                title: "blog 1",
+                customId: "blog 3",
                 img: "img link",
                 video: "video link",
                 category: "category",

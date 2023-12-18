@@ -1,6 +1,11 @@
 import mongoose, {Schema, Document} from 'mongoose';
 
 const ServicepageSchema: Schema = new Schema({
+    meta_tags:{
+        metaTitle: {type: String},
+        slug: {type: String},
+        MetaDescription: {type: String},
+    },
     banner: {
         title: {type: String, required: true},
         description: {type: String, required: true},

@@ -1,6 +1,11 @@
 import mongoose, {Schema, Document} from 'mongoose';
 
 const HomepageSchema: Schema = new Schema({
+    meta_tags:{
+        metaTitle: {type: String},
+        slug: {type: String},
+        MetaDescription: {type: String},
+    },
     banner: {
         bannervideo: {type: String, required: true},
         bannervideoposter: {type: String, required: true},
@@ -16,11 +21,11 @@ const HomepageSchema: Schema = new Schema({
     industrypickerform: {
         industrypicker_title: {type: String, required: true},
         industrypicker_description: {type: String, required: true},
-        industrypicker: [
-            {
-                title: {type: String, required: true}
-            }
-        ],
+        // industrypicker: [
+        //     {
+        //         title: {type: String, required: true}
+        //     }
+        // ],
         businesspicker: [
             {
                 title: {type: String, required: true}
