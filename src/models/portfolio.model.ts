@@ -18,15 +18,12 @@ const PortfoliopageSchema: Schema = new Schema({
                 img: {type: String, required: true},
                 description: {type: String, required: true},
                 video: {type: String},
-                technologies: {
-                    list:[
+                technologies: [
                         {
                             icon:{type: String, required: true},
                             title:{type: String, required: true},
                         }
-
-                    ]
-                },
+                        ],
                 introduction: {
                     content: {type: String, required: true},
                     style: {type: String}

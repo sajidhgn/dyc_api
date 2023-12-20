@@ -25,7 +25,7 @@ const sampleData = {
                 long_description: "long description",
             },
             {
-                title: "blog 2",
+                title: "blog-2",
                 img: "img link",
                 video: "video link",
                 category: "category",

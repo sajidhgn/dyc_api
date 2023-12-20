@@ -19,8 +19,8 @@ const sampleData = {
                 img: "img link",
                 video: "video optional",
                 description: "description",
-                technologies: {
-                    list:[
+                technologies: [
+
                         {
                             icon:"img or icon",
                             title:"title",
@@ -33,9 +33,8 @@ const sampleData = {
                             icon:"img or icon",
                             title:"title",
                         }
+                        ],
 
-                    ]
-                },
                 introduction: {
                     content: "html",
                     style: "css"

@@ -12,6 +12,7 @@ import pricingRoute from "./pricing.route";
 import dedicatedRoute from "./dedicated.route";
 import blockchainRoute from "./blockchain.route";
 import gameRoute from "./game.route";
+import directorRoute from "./director.route";
 const router = express.Router();
 
 const defaultRoutes = [
@@ -63,6 +64,10 @@ const defaultRoutes = [
     },{
         path: '/game',
         route: gameRoute
+    },
+    {
+        path: '/director',
+        route: directorRoute
     }
 ];
 

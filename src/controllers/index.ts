@@ -11,3 +11,4 @@ export const pricingController = require('./pricing.Controller');
 export const dedicatedController = require('./dedicated.Controller');
 export const blockchainController = require('./blockchain.Controller');
 export const gameController = require('./game.Controller');
+export const directorController = require('./director.Controller');
